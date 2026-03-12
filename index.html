@@ -935,8 +935,11 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 <strong>LaZone Grill</strong>. All rights reserved. Crafted with 🌮</p>
+        <p>&copy; <span id="year"></span> <strong>LaZone Grill</strong>. All rights reserved. Crafted with 🌮</p>
     </footer>
 
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
